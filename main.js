@@ -48,8 +48,6 @@ function outputDate(dates) {
     const years = Math.floor(months / 12);
     const actualMonths = Math.ceil(months - years * 12);
 
-    const leapYear = days + 1;
-
     if (years < 1 && actualMonths < 2 && days < 31) {
       return `total ${days} days`;
     } else if (years < 1 && actualMonths < 2 && days > 30) {
@@ -75,5 +73,3 @@ function outputDate(dates) {
 
   return calcDate(date1, date2);
 }
-
-
